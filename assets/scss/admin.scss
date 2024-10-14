@@ -1,0 +1,46 @@
+// Taxonomy
+
+.taxonomy-internal_tag {
+	.term-slug-wrap {
+		display: none; // Hides the slug field on tag add/edit as users may not know what it is, it can edited if needed via quick edit
+	}
+	#name-description,
+	#parent-description,
+	#description-description {
+		display: none !important; // Hides the descriptions of these fields on tag add/edit as these are WordPress core field descriptions that do not make as much sense in an internal tags context
+	}
+}
+
+// Settings
+
+#internal-tags-settings {
+	select[multiple] {
+		width: 400px;
+	}
+}
+
+// Display
+
+.internal-tags-display {
+	margin: 0;
+	li {
+		span {
+			border-bottom: 1px solid rgba( 0, 0, 0, 0.25 );
+			border-radius: 5px;
+			font-size: 0.85em;
+			padding: 3px 6px;
+		}
+		.children {
+			margin-top: 6px;
+			li::before {
+				content: "\21b3"; // Down right arrow
+				margin-right: 5px;
+				opacity: 0.5;
+			}
+		}
+	}
+	&.internal-tags-display-compact {
+		height: 60px; // Enough to cut off the third tag so can visibily see a need to scroll to view more
+		overflow-y: scroll;
+	}
+}
