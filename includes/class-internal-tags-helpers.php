@@ -8,8 +8,6 @@ if ( !class_exists( 'Internal_Tags_Helpers' ) ) {
 
 	class Internal_Tags_Helpers {
 
-
-
 		public static function all_post_types( $exclude_incompatible = true ) {
 
 			// Gets all the registered post types in WordPress
