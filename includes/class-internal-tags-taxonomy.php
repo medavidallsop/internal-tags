@@ -116,13 +116,13 @@ if ( !class_exists( 'Internal_Tags_Taxonomy' ) ) {
 
 					if ( isset( $_POST['internal_tags_color_background'] ) ) {
 
-						update_term_meta( $term_id, 'internal_tags_color_background', sanitize_text_field( $_POST['internal_tags_color_background'] ) );
+						update_term_meta( $term_id, 'internal_tags_color_background', sanitize_text_field( wp_unslash( $_POST['internal_tags_color_background'] ) ) );
 
 					}
 
 					if ( isset( $_POST['internal_tags_color_text'] ) ) {
 
-						update_term_meta( $term_id, 'internal_tags_color_text', sanitize_text_field( $_POST['internal_tags_color_text'] ) );
+						update_term_meta( $term_id, 'internal_tags_color_text', sanitize_text_field( wp_unslash( $_POST['internal_tags_color_text'] ) ) );
 
 					}
 
