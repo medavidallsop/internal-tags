@@ -22,7 +22,35 @@ if ( !class_exists( 'Internal_Tags_Walker' ) ) {
 			$color_text = get_term_meta( $category->term_id, 'internal_tags_color_text', true );
 			$color_text = ( !empty( $color_text ) ? $color_text : $color_text_default );
 
-			$output .= '<li><span style="background-color: ' . $color_background . '; color: ' . $color_text . ';" title="' . $category->description . '">' . $category->name . '</span>';
+			$inline_styles = '';
+
+			if ( !empty( $color_background ) || !empty( $color_text ) ) {
+
+				$inline_styles .= ' style="';
+
+				if ( !empty( $color_background ) ) {
+
+					$inline_styles .= 'background-color: ' . $color_background . ';';
+
+				}
+
+				if ( !empty( $color_text ) ) {
+
+					if ( !empty( $color_background ) ) {
+
+						$inline_styles .= ' ';
+
+					}
+
+					$inline_styles .= 'color: ' . $color_text . ';';
+
+				}
+
+				$inline_styles .= '"';
+
+			}
+
+			$output .= '<li><span title="' . esc_attr( $category->description ) . '"' . wp_kses_post( $inline_styles ) . '>' . esc_html( $category->name ) . '</span>';
 
 		}
 
