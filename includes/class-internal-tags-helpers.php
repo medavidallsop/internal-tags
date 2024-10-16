@@ -112,12 +112,11 @@ if ( !class_exists( 'Internal_Tags_Helpers' ) ) {
 
 					wp_list_categories(
 						array(
-							'hide_empty'			=> false, // This has to be false, if this was true then if an internal tag is not set on any other posts, if that tag is then set on a draft post it displays "No categories" instead of the internal tag
-							'include'				=> $terms,
-							'taxonomy'				=> $taxonomy,
-							'title_li'				=> '', // Blank as populating this results in an unwanted title displaying
-							'use_desc_for_title'	=> true, // Displays description on hover
-							'walker'				=> new Internal_Tags_Walker(), // Manipulates the default wp_list_categories() markup so it can be displayed as required
+							'hide_empty'	=> false, // This has to be false, if this was true then if an internal tag is not set on any other posts, if that tag is then set on a draft post it displays "No categories" instead of the internal tag
+							'include'		=> $terms,
+							'taxonomy'		=> $taxonomy,
+							'title_li'		=> '', // Blank as populating this results in an unwanted title displaying
+							'walker'		=> new Internal_Tags_Walker(), // Manipulates the default wp_list_categories() markup so it can be displayed as required
 						)
 					);
 

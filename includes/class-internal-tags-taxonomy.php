@@ -108,25 +108,21 @@ if ( !class_exists( 'Internal_Tags_Taxonomy' ) ) {
 
 		public function term_fields_save( $term_id ) {
 
-			// Save the internal tags taxonomy term fields
+			// Save internal tags taxonomy term fields
 
-			if ( !empty( $_POST ) ) {
+			if ( isset( $_POST['internal_tags_taxonomy_term_fields_save_nonce'] ) ) { // This also ensures we are only dealing with edits to internal tags and not effecting any other taxonomies
 
-				if ( isset( $_POST['internal_tags_taxonomy_term_fields_save_nonce'] ) ) { // This also ensures we are only dealing with edits to internal tags and not effecting any other taxonomies
+				if ( wp_verify_nonce( sanitize_key( $_POST['internal_tags_taxonomy_term_fields_save_nonce'] ), 'internal_tags_taxonomy_term_fields_save' ) ) {
 
-					if ( wp_verify_nonce( sanitize_key( $_POST['internal_tags_taxonomy_term_fields_save_nonce'] ), 'internal_tags_taxonomy_term_fields_save' ) ) {
+					if ( isset( $_POST['internal_tags_color_background'] ) ) {
 
-						if ( isset( $_POST['internal_tags_color_background'] ) ) {
+						update_term_meta( $term_id, 'internal_tags_color_background', sanitize_text_field( $_POST['internal_tags_color_background'] ) );
 
-							update_term_meta( $term_id, 'internal_tags_color_background', sanitize_text_field( $_POST['internal_tags_color_background'] ) );
+					}
 
-						}
+					if ( isset( $_POST['internal_tags_color_text'] ) ) {
 
-						if ( isset( $_POST['internal_tags_color_text'] ) ) {
-
-							update_term_meta( $term_id, 'internal_tags_color_text', sanitize_text_field( $_POST['internal_tags_color_text'] ) );
-
-						}
+						update_term_meta( $term_id, 'internal_tags_color_text', sanitize_text_field( $_POST['internal_tags_color_text'] ) );
 
 					}
 
