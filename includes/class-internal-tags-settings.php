@@ -38,8 +38,8 @@ if ( !class_exists( 'Internal_Tags_Settings' ) ) {
 				'internal-tags',
 				'internal_tags_settings',
 				array(
-					'type'				=> 'array',
 					'sanitize_callback'	=> array( $this, 'sanitize' ),
+					'type'				=> 'array',
 				)
 			);
 
