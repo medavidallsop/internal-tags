@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Internal Tags\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-14 14:09+0000\n"
+"POT-Creation-Date: 2024-10-16 11:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -44,12 +44,12 @@ msgstr ""
 msgid "Background Color"
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:81
+#: includes/class-internal-tags-settings.php:88
 msgid "Background color"
 msgstr ""
 
 #. %s: recommended user capability
-#: includes/class-internal-tags-settings.php:63
+#: includes/class-internal-tags-settings.php:70
 #, php-format
 msgid ""
 "Capability a user must have to be able to view internal tags. If unsure, use "
@@ -60,7 +60,7 @@ msgstr ""
 msgid "Choose from the most used"
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:76
+#: includes/class-internal-tags-settings.php:83
 msgid "Compact"
 msgstr ""
 
@@ -68,11 +68,11 @@ msgstr ""
 msgid "David Allsop"
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:75
+#: includes/class-internal-tags-settings.php:82
 msgid "Default"
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:82
+#: includes/class-internal-tags-settings.php:89
 msgid ""
 "Default background color used on internal tags when the background color is "
 "not set."
@@ -83,12 +83,12 @@ msgstr ""
 msgid "default color"
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:88
+#: includes/class-internal-tags-settings.php:95
 msgid ""
 "Default text color used on internal tags when the text color is not set."
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:70
+#: includes/class-internal-tags-settings.php:77
 msgid "Display mode"
 msgstr ""
 
@@ -96,7 +96,7 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:94
+#: includes/class-internal-tags-settings.php:101
 msgid "Enable or disable the sponsor/review nag notice."
 msgstr ""
 
@@ -162,13 +162,13 @@ msgstr ""
 msgid "list navigation"
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:71
+#: includes/class-internal-tags-settings.php:78
 msgid ""
 "Mode used to display internal tags. Compact view reduces the height of the "
 "internal tags list and can be scrolled."
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:93
+#: includes/class-internal-tags-settings.php:100
 msgid "Nag"
 msgstr ""
 
@@ -197,11 +197,11 @@ msgstr ""
 msgid "Popular"
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:53
+#: includes/class-internal-tags-settings.php:60
 msgid "Post types"
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:54
+#: includes/class-internal-tags-settings.php:61
 msgid ""
 "Post types that internal tags are enabled on. This is a list of all "
 "registered post types, excluding some that are likely to have compatibility "
@@ -235,7 +235,7 @@ msgstr ""
 msgid "Sets the tag text color. If not set, the %s is used."
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:123
+#: includes/class-internal-tags-settings.php:130
 msgid "Settings"
 msgstr ""
 
@@ -251,7 +251,7 @@ msgstr ""
 msgid "Text Color"
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:87
+#: includes/class-internal-tags-settings.php:94
 msgid "Text color"
 msgstr ""
 
@@ -259,7 +259,7 @@ msgstr ""
 msgid "Update"
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:61
+#: includes/class-internal-tags-settings.php:68
 msgid "User capability"
 msgstr ""
 
@@ -271,6 +271,6 @@ msgstr ""
 msgid "with commas"
 msgstr ""
 
-#: includes/class-internal-tags-helpers.php:118
+#: includes/class-internal-tags-helpers.php:133
 msgid "You do not have permission to view internal tags."
 msgstr ""
