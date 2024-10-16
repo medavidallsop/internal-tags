@@ -14,9 +14,9 @@ if ( !class_exists( 'Internal_Tags_Helpers' ) ) {
 
 			$post_types = get_post_types();
 
-			if ( true == $exclude_incompatible ) {
+			// Exclude any post types that are likely to be incompatible with internal tags, currently or potentially in future
 
-				// Exclude any post types that are likely to be incompatible with internal tags, currently or potentially in future
+			if ( true == $exclude_incompatible ) {
 
 				unset( $post_types['attachment'] );
 				unset( $post_types['custom_css'] );
@@ -40,6 +40,24 @@ if ( !class_exists( 'Internal_Tags_Helpers' ) ) {
 				unset( $post_types['wp_template_part'] );
 
 			}
+
+			// Set the value to be the post type name and ID, this is done because some internal post types from plugins might not set a name label and default to a posts label, e.g. global_product_addon from WooCommerce Product Add-ons, so in this scenario without the ID you have 2 posts types named Posts and wouldn't be able to differentiate between them
+
+			if ( !empty( $post_types ) ) {
+
+				foreach ( $post_types as $post_type ) {
+
+					$post_types[$post_type] = get_post_type_object( $post_type )->labels->name . ' (' . $post_type . ')';
+
+				}
+
+			}
+
+			// Sort the array according to the value not key
+
+			asort( $post_types );
+
+			// Return the post types
 
 			return $post_types;
 

@@ -34,7 +34,14 @@ if ( !class_exists( 'Internal_Tags_Settings' ) ) {
 
 			// Register the internal_tags_settings option
 
-			register_setting( 'internal-tags', 'internal_tags_settings' );
+			register_setting(
+				'internal-tags',
+				'internal_tags_settings',
+				array(
+					'type'				=> 'array',
+					'sanitize_callback'	=> array( $this, 'sanitize' ),
+				)
+			);
 
 			// Register a new section
 
@@ -208,6 +215,7 @@ if ( !class_exists( 'Internal_Tags_Settings' ) ) {
 			// Display the settings form
 
 			?>
+
 			<div id="internal-tags-settings" class="wrap">
 				<h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
 				<form action="options.php" method="post">
@@ -218,7 +226,14 @@ if ( !class_exists( 'Internal_Tags_Settings' ) ) {
 					?>
 				</form>
 			</div>
+
 			<?php
+
+		}
+
+		public function sanitize( $settings ) {
+
+			return map_deep( $settings, 'sanitize_text_field' );
 
 		}
 
