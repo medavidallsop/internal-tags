@@ -53,6 +53,18 @@ Help contribute towards the development of this plugin via the [GitHub repositor
 
 == Frequently Asked Questions ==
 
+= Where do I set an internal tags on posts? =
+
+When editing a post you'll see an internal tags section where you can set the tags.
+
+= Can I add/remove tags directly from the posts list? =
+
+Yes. This can be done via the quick edit link under the post title.
+
+= Can I bulk add tags directly from the posts list? =
+
+Yes. Select the posts using the checkboxes then click the Bulk actions > Edit, and select the tags.
+
 = Where is the internal tag descripiton used? =
 
 This appears when you hover over an internal tag.
