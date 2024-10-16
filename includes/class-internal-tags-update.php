@@ -24,7 +24,7 @@ if ( !class_exists( 'Internal_Tags_Update' ) ) {
 
 				if ( version_compare( $version, '1.0.0', '<' ) ) {
 
-					$default_settings = array(
+					$settings = array(
 						'post_types'			=> array( 'page', 'post' ),
 						'user_capability'		=> 'edit_posts',
 						'display_mode'			=> 'default',
@@ -33,7 +33,7 @@ if ( !class_exists( 'Internal_Tags_Update' ) ) {
 						'nag'					=> '1',
 					);
 
-					update_option( 'internal_tags_settings', $default_settings );
+					update_option( 'internal_tags_settings', $settings );
 
 				}
 
