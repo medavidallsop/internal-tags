@@ -112,47 +112,19 @@ if ( !class_exists( 'Internal_Tags_Taxonomy' ) ) {
 
 			if ( !empty( $_POST ) ) {
 
-				if ( isset( $_POST['internal_tags_taxonomy_term_fields_save_nonce'] ) ) { // This also ensures we are only dealing with edits to the internal tags and not effecting other taxonomies
+				if ( isset( $_POST['internal_tags_taxonomy_term_fields_save_nonce'] ) ) { // This also ensures we are only dealing with edits to internal tags and not effecting any other taxonomies
 
 					if ( wp_verify_nonce( sanitize_key( $_POST['internal_tags_taxonomy_term_fields_save_nonce'] ), 'internal_tags_taxonomy_term_fields_save' ) ) {
 
-						// Delete all internal tag term meta, this ensures that if an option was previously populated and no longer is and isn't submitted such as checkboxes then the removal occurs
+						if ( isset( $_POST['internal_tags_color_background'] ) ) {
 
-						$internal_tag_metas = get_term_meta( $term_id );
-
-						if ( !empty( $internal_tag_metas ) ) {
-
-							foreach ( $internal_tag_metas as $internal_tag_meta_key => $internal_tag_meta_values ) {
-
-								if ( strpos( $internal_tag_meta_key, 'internal_tags_' ) === 0 ) {
-
-									delete_term_meta( $term_id, $internal_tag_meta_key );
-
-								}
-
-							}
+							update_term_meta( $term_id, 'internal_tags_color_background', sanitize_text_field( $_POST['internal_tags_color_background'] ) );
 
 						}
 
-						// Loop all $_POST
+						if ( isset( $_POST['internal_tags_color_text'] ) ) {
 
-						foreach ( $_POST as $post_key => $post_value ) {
-
-							// If internal tags taxonomy term field
-
-							if ( strpos( $post_key, 'internal_tags_' ) === 0 ) {
-
-								// If not the nonce field as this should not be saved
-
-								if ( 'internal_tags_taxonomy_term_fields_save_nonce' !== $post_key ) {
-
-									// Add the internal tag term meta
-
-									update_term_meta( $term_id, $post_key, $post_value );
-
-								}
-
-							}
+							update_term_meta( $term_id, 'internal_tags_color_text', sanitize_text_field( $_POST['internal_tags_color_text'] ) );
 
 						}
 
