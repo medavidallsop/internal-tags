@@ -24,11 +24,12 @@
 .internal-tags-display {
 	margin: 0;
 	li {
+		margin: 0 6px 6px 0;
 		span {
 			border-bottom: 1px solid rgba( 0, 0, 0, 0.25 );
 			border-radius: 5px;
-			font-size: 0.85em;
-			padding: 3px 6px;
+			display: inline-block;
+			padding: 1px 6px;
 		}
 		.children {
 			margin-top: 6px;
@@ -39,8 +40,24 @@
 			}
 		}
 	}
+	&.internal-tags-display-horizontal {
+		display: flex;
+		flex-wrap: wrap;
+		li {
+			margin-right: 5px;
+			.children {
+				display: flex;
+				flex-wrap: wrap;
+			}
+		}
+	}
 	&.internal-tags-display-compact {
-		height: 60px; // Enough to cut off the third tag so can visibily see a need to scroll to view more
+		height: 60px;
 		overflow-y: scroll;
+		li {
+			span {
+				font-size: 0.85em;
+			}
+		}
 	}
 }

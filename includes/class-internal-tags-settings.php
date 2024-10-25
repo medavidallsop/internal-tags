@@ -75,12 +75,14 @@ if ( !class_exists( 'Internal_Tags_Settings' ) ) {
 				array(
 					'id'			=> 'display_mode',
 					'label'			=> esc_html__( 'Display mode', 'internal-tags' ),
-					'description'	=> esc_html__( 'Mode used to display internal tags. Compact view reduces the height of the internal tags list and can be scrolled.', 'internal-tags' ),
+					'description'	=> esc_html__( 'Mode used to display internal tags. Compact views reduce the size of the internal tags list and can be scrolled.', 'internal-tags' ),
 					'type'			=> 'select',
 					'select2'		=> false,
 					'options'		=> array(
-						'default'	=> esc_html__( 'Default', 'internal-tags' ),
-						'compact'	=> esc_html__( 'Compact', 'internal-tags' ),
+						'horizontal'			=> esc_html__( 'Horizontal', 'internal-tags' ),
+						'horizontal_compact'	=> esc_html__( 'Horizontal compact', 'internal-tags' ),
+						'vertical'				=> esc_html__( 'Vertical', 'internal-tags' ),
+						'vertical_compact'		=> esc_html__( 'Vertical compact', 'internal-tags' ),
 					)
 				),
 				array(

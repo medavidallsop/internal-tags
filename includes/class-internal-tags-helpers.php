@@ -83,6 +83,18 @@ if ( !class_exists( 'Internal_Tags_Helpers' ) ) {
 
 		}
 
+		public static function string_ends_with( $string, $starts_with ) {
+
+			return substr_compare( $string, $starts_with, -strlen( $starts_with ) ) === 0;
+
+		}
+
+		public static function string_starts_with( $string, $starts_with ) {
+
+			return substr_compare( $string, $starts_with, 0, strlen( $starts_with ) ) === 0;
+
+		}
+
 		public static function internal_tags_display( $post_id ) {
 
 			// Displays the internal tags HTML markup
@@ -104,9 +116,13 @@ if ( !class_exists( 'Internal_Tags_Helpers' ) ) {
 				if ( !empty( $terms ) ) {
 
 					$settings = self::internal_tags_settings();
-					$display_mode = ( isset( $settings['display_mode'] ) ? $settings['display_mode'] : 'default' );
+					$display_mode = ( isset( $settings['display_mode'] ) ? $settings['display_mode'] : 'horizontal' );
 
-					echo '<ul class="internal-tags-display internal-tags-display-' . esc_attr( $display_mode ) . '">';
+					$class = 'internal-tags-display';
+					$class .= ( self::string_starts_with( $display_mode, 'horizontal' ) ? ' internal-tags-display-horizontal' : ' internal-tags-display-vertical' );
+					$class .= ( self::string_ends_with( $display_mode, 'compact' ) ? ' internal-tags-display-compact' : '' );
+
+					echo '<ul class="' . esc_attr( $class ) . '">';
 
 					$terms = trim( implode( ',', $terms ), ',' );
 

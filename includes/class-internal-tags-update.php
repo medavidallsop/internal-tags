@@ -27,7 +27,7 @@ if ( !class_exists( 'Internal_Tags_Update' ) ) {
 					$settings = array(
 						'post_types'			=> array( 'page', 'post' ),
 						'user_capability'		=> 'edit_posts',
-						'display_mode'			=> 'default',
+						'display_mode'			=> 'horizontal',
 						'color_background'		=> '#000000',
 						'color_text'			=> '#ffffff',
 						'nag'					=> '1',
