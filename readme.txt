@@ -13,22 +13,23 @@ Set internal tags on posts, pages, or custom post types for easier management.
 
 **Set internal tags on posts, pages, or custom post types for easier management.**
 
-This plugin allows you to create internal tags, these can then be set on posts, pages, custom post types, etc.
+This plugin allows you to create internal tags, these can then be set on posts, pages, custom post types, etc. Once set, they appear on the list of posts in the WordPress dashboard, aiding your content management.
 
-Internal tags can be used for your internal content management purposes, for example, you could set a tag if the post is ready for review, if a post needs checking by a specific team, needs images adding, etc.
+For example, you could set a tag if a post needs checking by a specific team, needs images adding, needs SEO work, etc.
 
 = Features =
 
 - Create an unlimited number of internal tags
-- Set tag name, description and colors
+- Set a tag name, description and colors
 - Create hierarchical internal tags
 - View tags on the list of posts in the WordPress dashboard
 - Filter list of posts by an internal tag
 - Set an internal tag during post creation
-- Bulk add / quick edit internal tags from the posts list
+- Bulk add or quick edit internal tags from the posts list
 - Choose which post types to enable internal tags on
 - Choose which user capability a user must have to view internal tags
-- Default and compact display modes
+- Horizontal and vertical display modes
+- Compact display mode
 - Set default tag colors used when the tag has no color set
 
 = Usage =
@@ -37,7 +38,7 @@ After installation you'll find the settings in **Settings > Internal Tags**, cho
 
 Once you have created a tag you'll see it on the right side, click edit to configure further options, such as setting the tags colors.
 
-Now you've created a tag it can be assigned when adding/editing a post.
+Now you've created a tag it can be set when adding or editing a post. Once a tag has been set you'll see it on the posts list.
 
 = Contribute =
 
@@ -53,17 +54,17 @@ Help contribute towards the development of this plugin via the [GitHub repositor
 
 == Frequently Asked Questions ==
 
-= Where do I set an internal tags on posts? =
+= Where do I set or unset internal tags on posts? =
 
-When editing a post you'll see an internal tags section where you can set the tags.
+When editing a post you'll see an internal tags section where you can set or unset the tags.
 
-= Can I add/remove tags directly from the posts list? =
+= Can I set or unset tags from the posts list? =
 
 Yes. This can be done via the quick edit link under the post title.
 
-= Can I bulk add tags directly from the posts list? =
+= Can I bulk set tags directly from the posts list? =
 
-Yes. Select the posts using the checkboxes then click the Bulk actions > Edit, and select the tags.
+Yes. Select the posts using the checkboxes then click the Bulk actions > Edit, and select the tags you wish to set.
 
 = Where is the internal tag descripiton used? =
 
