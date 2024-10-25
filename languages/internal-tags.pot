@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Internal Tags\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-16 11:12+0000\n"
+"POT-Creation-Date: 2024-10-25 13:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -44,7 +44,7 @@ msgstr ""
 msgid "Background Color"
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:88
+#: includes/class-internal-tags-settings.php:90
 msgid "Background color"
 msgstr ""
 
@@ -60,19 +60,11 @@ msgstr ""
 msgid "Choose from the most used"
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:83
-msgid "Compact"
-msgstr ""
-
 #. Author of the plugin
 msgid "David Allsop"
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:82
-msgid "Default"
-msgstr ""
-
-#: includes/class-internal-tags-settings.php:89
+#: includes/class-internal-tags-settings.php:91
 msgid ""
 "Default background color used on internal tags when the background color is "
 "not set."
@@ -83,7 +75,7 @@ msgstr ""
 msgid "default color"
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:95
+#: includes/class-internal-tags-settings.php:97
 msgid ""
 "Default text color used on internal tags when the text color is not set."
 msgstr ""
@@ -96,7 +88,7 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:101
+#: includes/class-internal-tags-settings.php:103
 msgid "Enable or disable the sponsor/review nag notice."
 msgstr ""
 
@@ -108,6 +100,14 @@ msgid ""
 "you, please consider %1$s (one-time or monthly) and/or %2$s. This helps me "
 "commit more time to development and keeps it free. You can disable this nag "
 "in %3$s."
+msgstr ""
+
+#: includes/class-internal-tags-settings.php:82
+msgid "Horizontal"
+msgstr ""
+
+#: includes/class-internal-tags-settings.php:83
+msgid "Horizontal compact"
 msgstr ""
 
 #. Author URI of the plugin
@@ -164,11 +164,11 @@ msgstr ""
 
 #: includes/class-internal-tags-settings.php:78
 msgid ""
-"Mode used to display internal tags. Compact view reduces the height of the "
+"Mode used to display internal tags. Compact views reduce the size of the "
 "internal tags list and can be scrolled."
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:100
+#: includes/class-internal-tags-settings.php:102
 msgid "Nag"
 msgstr ""
 
@@ -235,7 +235,7 @@ msgstr ""
 msgid "Sets the tag text color. If not set, the %s is used."
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:130
+#: includes/class-internal-tags-settings.php:132
 msgid "Settings"
 msgstr ""
 
@@ -251,7 +251,7 @@ msgstr ""
 msgid "Text Color"
 msgstr ""
 
-#: includes/class-internal-tags-settings.php:94
+#: includes/class-internal-tags-settings.php:96
 msgid "Text color"
 msgstr ""
 
@@ -263,6 +263,14 @@ msgstr ""
 msgid "User capability"
 msgstr ""
 
+#: includes/class-internal-tags-settings.php:84
+msgid "Vertical"
+msgstr ""
+
+#: includes/class-internal-tags-settings.php:85
+msgid "Vertical compact"
+msgstr ""
+
 #: includes/class-internal-tags-taxonomy.php:34
 msgid "View"
 msgstr ""
@@ -271,6 +279,6 @@ msgstr ""
 msgid "with commas"
 msgstr ""
 
-#: includes/class-internal-tags-helpers.php:133
+#: includes/class-internal-tags-helpers.php:149
 msgid "You do not have permission to view internal tags."
 msgstr ""
