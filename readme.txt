@@ -25,7 +25,7 @@ For example, you could set a tag if a post needs checking by a specific team, ne
 - View tags on the list of posts in the WordPress dashboard
 - Filter list of posts by an internal tag
 - Set an internal tag during post creation
-- Bulk add or quick edit internal tags from the posts list
+- Bulk edit or quick edit internal tags from the posts list
 - Choose which post types to enable internal tags on
 - Choose which user capability a user must have to view internal tags
 - Horizontal and vertical display modes
@@ -46,11 +46,13 @@ Help contribute towards the development of this plugin via the [GitHub repositor
 
 == Screenshots ==
 
-1. Tags on posts list
-2. Filter posts list
-3. Tag add
-4. Tag edit
-5. Settings
+1. Interal tags displayed on the posts list
+2. Adding an internal tag
+3. Editing an internal tag
+4. Set an internal tag on a post
+5. Set an internal tag on a post via quick edit or bulk actions
+6. Filter posts list by internal tag
+7. Configuring settings
 
 == Frequently Asked Questions ==
 
