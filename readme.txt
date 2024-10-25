@@ -20,10 +20,10 @@ For example, you could set a tag if a post needs checking by a specific team, ne
 = Features =
 
 - Create an unlimited number of internal tags
-- Set a tag name, description and colors
+- Set a tag name, description, and colors
 - Create hierarchical internal tags
 - View tags on the list of posts in the WordPress dashboard
-- Filter list of posts by an internal tag
+- Filter the list of posts by an internal tag
 - Set an internal tag during post creation
 - Bulk edit or quick edit internal tags from the posts list
 - Choose which post types to enable internal tags on
@@ -34,11 +34,11 @@ For example, you could set a tag if a post needs checking by a specific team, ne
 
 = Usage =
 
-After installation you'll find the settings in **Settings > Internal Tags**, choose which posts types you want internal tags for. Once enabled on your chosen post types you'll see an internal tags menu item under the post types menu in the WordPress dashboard. Click into this to create your tags.
+After installation, you'll find the settings in **Settings > Internal Tags**. Choose which post types you want internal tags for. Once enabled on your chosen post types, you'll see an internal tags menu item under the post types menu in the WordPress dashboard. Click into this to create your tags.
 
-Once you have created a tag you'll see it on the right side, click edit to configure further options, such as setting the tags colors.
+Once you have created a tag, you'll see it on the right side. Click edit to configure further options, such as setting the tags colors.
 
-Now you've created a tag it can be set when adding or editing a post. Once a tag has been set you'll see it on the posts list.
+Now that you've created a tag, it can be set when adding or editing a post. Once a tag has been set, you'll see it on the posts list.
 
 = Contribute =
 
@@ -58,7 +58,7 @@ Help contribute towards the development of this plugin via the [GitHub repositor
 
 = Where do I set or unset internal tags on posts? =
 
-When editing a post you'll see an internal tags section where you can set or unset the tags.
+When editing a post, you'll see an internal tags section where you can set or unset the tags.
 
 = Can I set or unset tags from the posts list? =
 
@@ -66,7 +66,7 @@ Yes. This can be done via the quick edit link under the post title.
 
 = Can I bulk set tags directly from the posts list? =
 
-Yes. Select the posts using the checkboxes then click the Bulk actions > Edit, and select the tags you wish to set.
+Yes. Select the posts using the checkboxes, then click the Bulk actions > Edit, and select the tags you wish to set.
 
 = Where is the internal tag descripiton used? =
 
