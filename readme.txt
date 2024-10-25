@@ -68,7 +68,7 @@ Yes. This can be done via the quick edit link under the post title.
 
 Yes. Select the posts using the checkboxes, then click the Bulk actions > Edit, and select the tags you wish to set.
 
-= Where is the internal tag descripiton used? =
+= Where is the internal tag description used? =
 
 This appears when you hover over an internal tag.
 
