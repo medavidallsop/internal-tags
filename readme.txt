@@ -46,7 +46,7 @@ Help contribute towards the development of this plugin via the [GitHub repositor
 
 == Screenshots ==
 
-1. Interal tags displayed on the posts list
+1. Internal tags displayed on the posts list
 2. Adding an internal tag
 3. Editing an internal tag
 4. Set an internal tag on a post
