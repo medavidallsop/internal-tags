@@ -29,7 +29,7 @@ For example, you could set a tag if a post needs checking by a specific team, ne
 - Choose which post types to enable internal tags on
 - Choose which user capability a user must have to view internal tags
 - Horizontal and vertical display modes
-- Compact display mode
+- Compact display modes
 - Set default tag colors used when the tag has no color set
 
 = Usage =
