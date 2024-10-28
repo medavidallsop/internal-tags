@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Internal Tags\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-25 13:34+0000\n"
+"POT-Creation-Date: 2024-10-28 14:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -164,7 +164,7 @@ msgstr ""
 
 #: includes/class-internal-tags-settings.php:78
 msgid ""
-"Mode used to display internal tags. Compact views reduce the size of the "
+"Mode used to display internal tags. Compact modes reduce the size of the "
 "internal tags list and can be scrolled."
 msgstr ""
 

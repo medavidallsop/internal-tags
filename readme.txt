@@ -97,6 +97,12 @@ Please see [this documentation](https://wordpress.org/documentation/article/mana
 
 == Changelog ==
 
+= 1.0.1 - 2024-10-28 =
+
+* Update: Display mode setting description
+* Update: Language .pot
+* Fix: Typos
+
 = 1.0.0 - 2024-10-25 =
 
 * New: Initial release

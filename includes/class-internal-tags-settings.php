@@ -75,7 +75,7 @@ if ( !class_exists( 'Internal_Tags_Settings' ) ) {
 				array(
 					'id'			=> 'display_mode',
 					'label'			=> esc_html__( 'Display mode', 'internal-tags' ),
-					'description'	=> esc_html__( 'Mode used to display internal tags. Compact views reduce the size of the internal tags list and can be scrolled.', 'internal-tags' ),
+					'description'	=> esc_html__( 'Mode used to display internal tags. Compact modes reduce the size of the internal tags list and can be scrolled.', 'internal-tags' ),
 					'type'			=> 'select',
 					'select2'		=> false,
 					'options'		=> array(
