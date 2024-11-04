@@ -1,6 +1,5 @@
 === Internal Tags ===
 Contributors: medavidallsop
-Donate link: https://github.com/sponsors/medavidallsop
 Tags: internal tags, internal tag, tags, tag, post tags
 Stable tag: 1.0.1
 Tested up to: 6.6.2

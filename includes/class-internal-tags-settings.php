@@ -100,7 +100,7 @@ if ( !class_exists( 'Internal_Tags_Settings' ) ) {
 				array(
 					'id'			=> 'nag',
 					'label'			=> esc_html__( 'Nag', 'internal-tags' ),
-					'description'	=> esc_html__( 'Enable or disable the sponsor/review nag notice.', 'internal-tags' ),
+					'description'	=> esc_html__( 'Enable or disable the leave review nag notice.', 'internal-tags' ),
 					'type'			=> 'checkbox',
 				),
 			);
