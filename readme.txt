@@ -1,7 +1,7 @@
 === Internal Tags ===
 Contributors: medavidallsop
 Tags: internal tags, internal tag, tags, tag, post tags
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 Tested up to: 6.6.2
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -95,6 +95,10 @@ Please see [this documentation](https://wordpress.org/documentation/article/mana
 * WordPress 5.0.0
 
 == Changelog ==
+
+= 1.0.2 - 2024-11-04 =
+
+* Remove: Sponsor information
 
 = 1.0.1 - 2024-10-28 =
 
