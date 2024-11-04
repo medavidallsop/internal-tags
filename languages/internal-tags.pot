@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Internal Tags\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-28 14:48+0000\n"
+"POT-Creation-Date: 2024-11-04 16:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -89,17 +89,15 @@ msgid "Edit"
 msgstr ""
 
 #: includes/class-internal-tags-settings.php:103
-msgid "Enable or disable the sponsor/review nag notice."
+msgid "Enable or disable the leave review nag notice."
 msgstr ""
 
-#. %1$s: sponsor link, %2$s: review link, %3$s: settings link
+#. %1$s: review link, %2$s: settings link
 #: includes/class-internal-tags-nag.php:64
 #, php-format
 msgid ""
 "Hello! I'm David. I develop this plugin in my spare time. If it has helped "
-"you, please consider %1$s (one-time or monthly) and/or %2$s. This helps me "
-"commit more time to development and keeps it free. You can disable this nag "
-"in %3$s."
+"you, please consider %1$s. You can disable this nag in %2$s."
 msgstr ""
 
 #: includes/class-internal-tags-settings.php:82
@@ -241,10 +239,6 @@ msgstr ""
 
 #: includes/class-internal-tags-nag.php:64
 msgid "settings"
-msgstr ""
-
-#: includes/class-internal-tags-nag.php:64
-msgid "sponsoring me on GitHub"
 msgstr ""
 
 #: includes/class-internal-tags-taxonomy.php:88
