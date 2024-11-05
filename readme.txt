@@ -43,6 +43,8 @@ Now that you've created a tag, it can be set when adding or editing a post. Once
 
 Help contribute towards the development of this plugin via the [GitHub repository](https://github.com/medavidallsop/internal-tags).
 
+You can also help [translate this plugin into your language](https://translate.wordpress.org/projects/wp-plugins/internal-tags/).
+
 == Screenshots ==
 
 1. Internal tags displayed on the posts list
