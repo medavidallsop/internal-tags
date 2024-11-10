@@ -6,7 +6,7 @@
  * Description: Set internal tags on posts, pages, or custom post types for easier management.
  * Author: David Allsop
  * Author URI: https://davidallsop.com
- * Version: 1.0.2
+ * Version: 1.0.3
  * Requires at least: 5.0.0
  * Requires PHP: 7.0.0
  * Domain path: /languages
@@ -22,7 +22,7 @@ if ( !defined( 'ABSPATH' ) ) {
 if ( !class_exists( 'Internal_Tags' ) ) {
 
 	define( 'INTERNAL_TAGS_BASENAME', plugin_basename( __FILE__ ) );
-	define( 'INTERNAL_TAGS_VERSION', '1.0.2' );
+	define( 'INTERNAL_TAGS_VERSION', '1.0.3' );
 
 	class Internal_Tags {
 
